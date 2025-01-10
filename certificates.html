@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificates</title>
+    <link rel="stylesheet" href="certificates.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <!-- Menu Container -->
+        <div class="menu-container">
+            <button class="menu-icon" id="menu-toggle">☰</button>
+            <div class="dropdown-menu" id="dropdown-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="certificates.html">Certificates</a></li>
+                </ul>
+            </div>
+        </div>
+        <button id="dark-mode-toggle">🌙</button>
+    </header>
+
+    <section id="certificates-section">
+        <h1>My Certificates</h1>
+        <div class="certificates-container">
+            <!-- Certificate Card 1 -->
+            <div class="certificate-card" data-aos="zoom-in">
+                <h3> Google Cybersecurity</h3>
+                <p>Issued by: Coursera</p>
+                <button class="view-btn" data-pdf="Google%20Cyber%20Security.pdf">View Certificate</button>
+            </div>
+
+            <!-- Certificate Card 2 -->
+            <div class="certificate-card" data-aos="zoom-in">
+                <h3>Foundation of Cyber Security</h3>
+                <p>Issued by:Coursera</p>
+                <button class="view-btn" data-pdf="Foundations-of-Cybersecurity.pdf">View Certificate</button>
+            </div>
+            <!-- Certificate Card 3 -->
+            <div class="certificate-card" data-aos="zoom-in">
+              <h3>Network and Network Security</h3>
+              <p>Issued by:Coursera</p>
+              <button class="view-btn" data-pdf="Connect%20and%20Protect(Networks%20and%20Network%20Security).pdf">View Certificate</button>
+          </div>
+          <!-- Certificate Card 4 -->
+          <div class="certificate-card" data-aos="zoom-in">
+            <h3>Manage Security Risks</h3>
+            <p>Issued by:Coursera</p>
+            <button class="view-btn" data-pdf="Play%20it%20safe(Manage%20Security%20Risks).pdf">View Certificate</button>
+        </div>
+        <!-- Certificate Card 5 -->
+        <div class="certificate-card" data-aos="zoom-in">
+          <h3> Crash Course on Python</h3>
+          <p>Issued by:Coursera</p>
+          <button class="view-btn" data-pdf="python%20crash%20course.pdf">View Certificate</button>
+      </div>
+      <!-- Certificate Card 6 -->
+      <div class="certificate-card" data-aos="zoom-in">
+        <h3>Detection and Response</h3>
+        <p>Issued by:Coursera</p>
+        <button class="view-btn" data-pdf="Sound%20the%20Alarm(Detection%20and%20Response).pdf">View Certificate</button>
+    </div>
+    <!-- Certificate Card 7 -->
+    <div class="certificate-card" data-aos="zoom-in">
+      <h3> Assets, Threats, and Vulnerabilities</h3>
+      <p>Issued by:Coursera</p>
+      <button class="view-btn" data-pdf="Assets,%20Threats,%20and%20Vulnerabilities.pdf">View Certificate</button>
+  </div>
+  <!-- Certificate Card 8 -->
+  <div class="certificate-card" data-aos="zoom-in">
+    <h3>Password Cracking</h3>
+    <p>Issued by:Udemy</p>
+    <button class="view-btn" data-pdf="password%20cracking%20certificate.pdf">View Certificate</button>
+</div>
+        </div>
+    </section>
+
+    <div id="certificate-modal">
+        <div class="modal-content">
+            <span id="close-modal">&times;</span>
+            <iframe id="certificate-frame" src="" frameborder="0"></iframe>
+        </div>
+    </div>
+
+    <script src="certificates.js"></script>
+    <script src="menu.js"></script> <!-- Include menu.js for consistent behavior -->
+</body>
+</html>
