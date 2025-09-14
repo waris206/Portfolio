@@ -3,35 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Akash's Portfolio</title>
+    <title>Akash Waris - Cybersecurity Expert & Developer</title>
+    <meta name="description" content="Cybersecurity enthusiast passionate about protecting digital landscapes and solving complex challenges. Specialist in penetration testing, cryptography, and secure systems development.">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <div class="menu-container">
-            <button class="menu-icon" id="menu-toggle">☰</button>
+            <button class="menu-icon" id="menu-toggle" aria-label="Toggle navigation menu">☰</button>
             <div class="dropdown-menu" id="dropdown-menu">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="certificates.html">Certificates</a></li>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
+                    <li><a href="projects.html"><i class="fas fa-code"></i> Projects</a></li>
+                    <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                    <li><a href="certificates.html"><i class="fas fa-certificate"></i> Certificates</a></li>
                 </ul>
             </div>
-            
         </div>
-        <button id="dark-mode-toggle">🌙</button>
+        <button id="dark-mode-toggle" aria-label="Toggle dark mode">🌙</button>
     </header>
 
-    <div class="home-container" id="home" data-aos="fade-in">
-        <h1 id="animated-text"></h1>
-        <p>Explore my work, learn about my skills, and feel free to get in touch.</p>
-    </div>
+    <main>
+        <section class="home-container" id="home" data-aos="fade-in">
+            <h1 id="animated-text"></h1>
+            <p>Cybersecurity Expert | Penetration Tester | Secure Systems Developer</p>
+            <p>Passionate about protecting digital landscapes and solving complex security challenges through innovative solutions and cutting-edge technologies.</p>
+            
+            <div class="hero-buttons">
+                <a href="projects.html" class="hero-btn primary">
+                    <i class="fas fa-code"></i> View My Projects
+                </a>
+                <a href="contact.html" class="hero-btn secondary">
+                    <i class="fas fa-envelope"></i> Get In Touch
+                </a>
+            </div>
+        </section>
+
+        <!-- Skills Preview Section -->
+        <section class="skills-preview" data-aos="fade-up">
+            <div class="container">
+                <h2>Core Expertise</h2>
+                <div class="skills-grid">
+                    <div class="skill-item" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="skill-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Cybersecurity</h3>
+                        <p>Penetration testing, vulnerability assessment, and security auditing</p>
+                    </div>
+                    <div class="skill-item" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="skill-icon">
+                            <i class="fas fa-key"></i>
+                        </div>
+                        <h3>Cryptography</h3>
+                        <p>Advanced encryption techniques and secure communication protocols</p>
+                    </div>
+                    <div class="skill-item" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="skill-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Development</h3>
+                        <p>Low-level programming, assembly language, and system optimization</p>
+                    </div>
+                    <div class="skill-item" data-aos="zoom-in" data-aos-delay="400">
+                        <div class="skill-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <h3>Steganography</h3>
+                        <p>Hidden data transmission and advanced payload creation techniques</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Projects Section -->
+        <section class="featured-projects" data-aos="fade-up">
+            <div class="container">
+                <h2>Featured Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card featured" data-aos="fade-up" data-aos-delay="100">
+                        <h3>🕹️ Pac-Man Game in Assembly</h3>
+                        <p>A fully functional Pac-Man game built from scratch using Assembly language (8086), demonstrating low-level programming expertise.</p>
+                        <div class="project-tech-stack">
+                            <span class="tech-tag">Assembly</span>
+                            <span class="tech-tag">8086</span>
+                            <span class="tech-tag">Game Development</span>
+                        </div>
+                        <a href="https://github.com/waris206/Pacman-" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-github"></i> View Project
+                        </a>
+                    </div>
+                    <div class="project-card featured" data-aos="fade-up" data-aos-delay="200">
+                        <h3>🛡️ SkyNav AI</h3>
+                        <p>An intelligent navigation system with advanced routing algorithms and AI-powered optimization for enhanced security.</p>
+                        <div class="project-tech-stack">
+                            <span class="tech-tag">AI/ML</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Navigation</span>
+                        </div>
+                        <a href="https://github.com/waris206/SkyNav_ai" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-github"></i> View Project
+                        </a>
+                    </div>
+                </div>
+                <div class="cta-section">
+                    <a href="projects.html" class="hero-btn primary">
+                        <i class="fas fa-arrow-right"></i> View All Projects
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <footer>
-        <p>&copy; 2025 Akash. All Rights Reserved.</p>
+        <p>&copy; 2025 Akash Waris. All Rights Reserved. | Cybersecurity Expert & Developer</p>
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>

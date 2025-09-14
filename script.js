@@ -55,7 +55,7 @@ document.querySelectorAll('.close-btn').forEach((btn) => {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-    const text = "Welcome to Akash's Portfolio";
+    const text = "Welcome to Akash Waris's Portfolio";
     const animatedTextElement = document.getElementById("animated-text");
 
     let index = 0;

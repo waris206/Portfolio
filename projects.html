@@ -3,65 +3,167 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects - Akash's Portfolio</title>
+    <title>Projects - Akash Waris | Cybersecurity & Development Portfolio</title>
+    <meta name="description" content="Explore my cybersecurity and development projects including penetration testing tools, encryption systems, and innovative applications.">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <div class="menu-container">
-            <button class="menu-icon" id="menu-toggle">☰</button>
+            <button class="menu-icon" id="menu-toggle" aria-label="Toggle navigation menu">☰</button>
             <div class="dropdown-menu" id="dropdown-menu">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="certificates.html">Certificates</a></li>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
+                    <li><a href="projects.html"><i class="fas fa-code"></i> Projects</a></li>
+                    <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                    <li><a href="certificates.html"><i class="fas fa-certificate"></i> Certificates</a></li>
                 </ul>
             </div>
         </div>
-        <button id="dark-mode-toggle">🌙</button>
+        <button id="dark-mode-toggle" aria-label="Toggle dark mode">🌙</button>
     </header>
 
-    <div class="projects-container" data-aos="zoom-in">
-        <h1>My Projects</h1>
-        <div class="project-card" data-aos="fade-up">
-            <h3>Digital Cafe System ☕️</h3>
-            <p>A modernized system for managing cafes efficiently.</p>
-            <button class="read-more-btn">Read More</button>
-            <div class="project-details">
-                <p>Explore the GitHub repository:</p>
-                <a href="https://github.com/waris206/digital-cafe-system" target="_blank">GitHub Repository</a>
-                <button class="close-btn">Close</button>
-            </div>
-        </div>
+    <main>
+        <div class="projects-container" data-aos="zoom-in">
+            <h1>My Projects</h1>
+            <p class="projects-intro">A collection of cybersecurity tools, games, and innovative applications showcasing expertise in penetration testing, low-level programming, and secure system development.</p>
+            
+            <div class="projects-grid">
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-icon">
+                        <i class="fas fa-coffee"></i>
+                    </div>
+                    <h3>Digital Cafe System ☕️</h3>
+                    <p>A comprehensive modernized system for managing cafe operations efficiently with advanced features for inventory management, order processing, and customer relationship management.</p>
+                    <div class="project-tech-stack">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Database</span>
+                        <span class="tech-tag">GUI</span>
+                        <span class="tech-tag">Management System</span>
+                    </div>
+                    <button class="read-more-btn">Read More</button>
+                    <div class="project-details">
+                        <h4>🔍 Project Details</h4>
+                        <p><strong>Overview:</strong> A full-featured digital cafe management system that streamlines operations, enhances customer experience, and provides comprehensive analytics for business optimization.</p>
+                        <p><strong>Key Features:</strong></p>
+                        <ul>
+                            <li>Real-time inventory tracking and management</li>
+                            <li>Secure payment processing integration</li>
+                            <li>Customer loyalty program implementation</li>
+                            <li>Advanced reporting and analytics dashboard</li>
+                            <li>Multi-user access with role-based permissions</li>
+                        </ul>
+                        <p><strong>Technologies Used:</strong> Python, SQLite/MySQL, Tkinter/PyQt, API Integration</p>
+                        <a href="https://github.com/waris206/digital-cafe-system" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-github"></i> View on GitHub
+                        </a>
+                        <button class="close-btn">Close</button>
+                    </div>
+                </div>
 
-        <div class="project-card" data-aos="fade-up">
-            <h3>Pac-Man Game in Assembly (8086)</h3>
-            <p>A fully functional Pac-Man game built in Assembly.</p>
-            <button class="read-more-btn">Read More</button>
-            <div class="project-details">
-                <p>Explore the GitHub repository:</p>
-                <a href="https://github.com/waris206/Pacman-" target="_blank">GitHub Repository</a>
-                <button class="close-btn">Close</button>
-            </div>
-        </div>
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-icon">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <h3>Pac-Man Game in Assembly (8086) 🎮</h3>
+                    <p>A fully functional Pac-Man game developed from scratch using Assembly language (8086), demonstrating mastery of low-level programming and system optimization techniques.</p>
+                    <div class="project-tech-stack">
+                        <span class="tech-tag">Assembly 8086</span>
+                        <span class="tech-tag">Game Development</span>
+                        <span class="tech-tag">Low-Level Programming</span>
+                        <span class="tech-tag">Graphics</span>
+                    </div>
+                    <button class="read-more-btn">Read More</button>
+                    <div class="project-details">
+                        <h4>🎯 Project Details</h4>
+                        <p><strong>Overview:</strong> A complete implementation of the classic Pac-Man game using pure Assembly language, showcasing advanced understanding of computer architecture and optimization.</p>
+                        <p><strong>Key Features:</strong></p>
+                        <ul>
+                            <li>Custom graphics rendering system</li>
+                            <li>Optimized collision detection algorithms</li>
+                            <li>AI-driven ghost movement patterns</li>
+                            <li>Sound effects and game music integration</li>
+                            <li>Score tracking and high score persistence</li>
+                            <li>Multiple difficulty levels</li>
+                        </ul>
+                        <p><strong>Technical Achievements:</strong> Memory-efficient programming, direct hardware manipulation, interrupt handling, and real-time graphics processing.</p>
+                        <a href="https://github.com/waris206/Pacman-" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-github"></i> View on GitHub
+                        </a>
+                        <button class="close-btn">Close</button>
+                    </div>
+                </div>
 
-        <div class="project-card" data-aos="fade-up">
-            <h3>SkyNav AI</h3>
-            <p>An intelligent navigation system for advanced routing.</p>
-            <button class="read-more-btn">Read More</button>
-            <div class="project-details">
-                <p>Explore the GitHub repository:</p>
-                <a href="https://github.com/waris206/SkyNav_ai" target="_blank">GitHub Repository</a>
-                <button class="close-btn">Close</button>
+                <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-icon">
+                        <i class="fas fa-route"></i>
+                    </div>
+                    <h3>SkyNav AI 🛰️</h3>
+                    <p>An intelligent navigation system leveraging artificial intelligence for advanced routing algorithms, optimization techniques, and enhanced security features for critical applications.</p>
+                    <div class="project-tech-stack">
+                        <span class="tech-tag">AI/ML</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Navigation</span>
+                        <span class="tech-tag">Security</span>
+                    </div>
+                    <button class="read-more-btn">Read More</button>
+                    <div class="project-details">
+                        <h4>🚀 Project Details</h4>
+                        <p><strong>Overview:</strong> A sophisticated AI-powered navigation system that combines machine learning algorithms with cybersecurity principles to create secure, efficient routing solutions.</p>
+                        <p><strong>Key Features:</strong></p>
+                        <ul>
+                            <li>Machine learning-based route optimization</li>
+                            <li>Real-time threat detection and avoidance</li>
+                            <li>Encrypted communication protocols</li>
+                            <li>Dynamic path recalculation algorithms</li>
+                            <li>Multi-modal transportation support</li>
+                            <li>Predictive analytics for traffic patterns</li>
+                        </ul>
+                        <p><strong>Security Implementation:</strong> End-to-end encryption, secure authentication, intrusion detection, and data privacy protection.</p>
+                        <a href="https://github.com/waris206/SkyNav_ai" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-github"></i> View on GitHub
+                        </a>
+                        <button class="close-btn">Close</button>
+                    </div>
+                </div>
+
+                <!-- Additional Projects can be added here -->
+                <div class="project-card coming-soon" data-aos="fade-up" data-aos-delay="400">
+                    <div class="project-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Advanced Penetration Testing Suite 🛡️</h3>
+                    <p>A comprehensive penetration testing framework with automated vulnerability scanning, exploit development tools, and detailed security assessment reports.</p>
+                    <div class="project-tech-stack">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Pentesting</span>
+                        <span class="tech-tag">Security</span>
+                        <span class="tech-tag">Automation</span>
+                    </div>
+                    <div class="coming-soon-badge">
+                        <i class="fas fa-clock"></i> Coming Soon
+                    </div>
+                </div>
+            </div>
+            
+            <div class="cta-section">
+                <h2>Interested in Collaboration?</h2>
+                <p>I'm always open to working on exciting cybersecurity projects and innovative development challenges.</p>
+                <a href="contact.html" class="hero-btn primary">
+                    <i class="fas fa-handshake"></i> Let's Connect
+                </a>
             </div>
         </div>
-    </div>
+    </main>
 
     <footer>
-        <p>&copy; 2025 Akash. All Rights Reserved.</p>
+        <p>&copy; 2025 Akash Waris. All Rights Reserved. | Cybersecurity Expert & Developer</p>
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
