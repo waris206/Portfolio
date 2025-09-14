@@ -3,55 +3,153 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Akash's Portfolio</title>
+    <title>Contact - Akash Waris | Get In Touch</title>
+    <meta name="description" content="Get in touch with Akash Waris for cybersecurity projects, collaborations, or professional inquiries.">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <div class="menu-container">
-            <button class="menu-icon" id="menu-toggle">☰</button>
+            <button class="menu-icon" id="menu-toggle" aria-label="Toggle navigation menu">☰</button>
             <div class="dropdown-menu" id="dropdown-menu">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="certificates.html">Certificates</a></li>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
+                    <li><a href="projects.html"><i class="fas fa-code"></i> Projects</a></li>
+                    <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                    <li><a href="certificates.html"><i class="fas fa-certificate"></i> Certificates</a></li>
                 </ul>
             </div>
         </div>
-        <button id="dark-mode-toggle">🌙</button>
+        <button id="dark-mode-toggle" aria-label="Toggle dark mode">🌙</button>
     </header>
 
-    <div class="contact-container" id="contact" data-aos="fade-left">
-        <h1>Contact Me</h1>
-        <p>Let's connect! Feel free to reach out to me through any of the platforms below.</p>
+    <main>
+        <div class="contact-container" id="contact" data-aos="fade-left">
+            <h1><i class="fas fa-envelope-open"></i> Let's Connect</h1>
+            <p class="contact-intro">I'm always excited to discuss cybersecurity projects, innovative tech solutions, or potential collaborations. Whether you have a question, project idea, or just want to connect, feel free to reach out!</p>
 
-        <!-- Social Media Section -->
-        <div class="social-icons">
-            <a href="https://github.com/waris206" target="_blank" class="icon github" aria-label="GitHub">
-                <i class="fab fa-github"></i>
-            </a>
-            <a href="https://www.instagram.com/1akashwaris" target="_blank" class="icon instagram" aria-label="Instagram">
-                <i class="fab fa-instagram"></i>
-            </a>
-            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=akashwaris.cybersec@gmail.com" 
-            target="_blank" 
-            class="icon email" 
-            aria-label="Email">
-             <i class="fas fa-envelope"></i>
-         </a>
-         
-            <a href="https://www.linkedin.com/in/muhammad-akash-waris-cyber" target="_blank" class="icon linkedin" aria-label="LinkedIn">
-                <i class="fab fa-linkedin"></i>
-            </a>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2><i class="fas fa-info-circle"></i> Get In Touch</h2>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Email</h3>
+                                <p>akashwaris.cybersec@gmail.com</p>
+                                <a href="mailto:akashwaris.cybersec@gmail.com" class="contact-btn">
+                                    <i class="fas fa-paper-plane"></i> Send Email
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fab fa-linkedin"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>LinkedIn</h3>
+                                <p>Professional networking and career inquiries</p>
+                                <a href="https://www.linkedin.com/in/muhammad-akash-waris-cyber" target="_blank" rel="noopener noreferrer" class="contact-btn">
+                                    <i class="fab fa-linkedin"></i> Connect on LinkedIn
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>GitHub</h3>
+                                <p>Open source projects and code collaboration</p>
+                                <a href="https://github.com/waris206" target="_blank" rel="noopener noreferrer" class="contact-btn">
+                                    <i class="fab fa-github"></i> View GitHub Profile
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="collaboration-info">
+                    <h2><i class="fas fa-handshake"></i> Collaboration Opportunities</h2>
+                    <div class="collaboration-grid">
+                        <div class="collaboration-item">
+                            <div class="collab-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h3>Cybersecurity Projects</h3>
+                            <p>Penetration testing, security audits, and vulnerability assessments</p>
+                        </div>
+                        
+                        <div class="collaboration-item">
+                            <div class="collab-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h3>Software Development</h3>
+                            <p>System programming, optimization, and secure application development</p>
+                        </div>
+                        
+                        <div class="collaboration-item">
+                            <div class="collab-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <h3>Research & Education</h3>
+                            <p>Academic research, workshops, and cybersecurity training</p>
+                        </div>
+                        
+                        <div class="collaboration-item">
+                            <div class="collab-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h3>Community Projects</h3>
+                            <p>Open source contributions and community-driven security initiatives</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Social Media Section -->
+            <div class="social-section">
+                <h2><i class="fas fa-share-alt"></i> Follow My Journey</h2>
+                <p>Stay updated with my latest projects, insights, and cybersecurity discoveries</p>
+                <div class="social-icons">
+                    <a href="https://github.com/waris206" target="_blank" rel="noopener noreferrer" class="icon github" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                        <span class="social-label">GitHub</span>
+                    </a>
+                    <a href="https://www.instagram.com/1akashwaris" target="_blank" rel="noopener noreferrer" class="icon instagram" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                        <span class="social-label">Instagram</span>
+                    </a>
+                    <a href="mailto:akashwaris.cybersec@gmail.com" class="icon email" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                        <span class="social-label">Email</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/muhammad-akash-waris-cyber" target="_blank" rel="noopener noreferrer" class="icon linkedin" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                        <span class="social-label">LinkedIn</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="response-info">
+                <h3><i class="fas fa-clock"></i> Response Time</h3>
+                <p>I typically respond to emails and messages within 24-48 hours. For urgent cybersecurity matters, please mention "URGENT" in your subject line.</p>
+            </div>
         </div>
-    </div>
+    </main>
 
     <footer>
-        <p>&copy; 2025 Akash. All Rights Reserved.</p>
+        <p>&copy; 2025 Akash Waris. All Rights Reserved. | Cybersecurity Expert & Developer</p>
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
