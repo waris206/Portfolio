@@ -39,11 +39,12 @@ const Hero = ({ darkMode }) => {
     },
   };
 
-  const socialLinks = [
-    { icon: FiGithub, href: 'https://github.com/waris206', label: 'GitHub' },
-    { icon: FiLinkedin, href: 'https://www.linkedin.com/in/muhammad-akash-waris-cyber', label: 'LinkedIn' },
-    { icon: FiMail, href: 'mailto:akashwaris.cybersec@gmail.com', label: 'Email' },
-  ];
+const socialLinks = [
+  { icon: FiGithub, href: 'https://github.com/waris206', label: 'GitHub' },
+  { icon: FiLinkedin, href: 'https://www.linkedin.com/in/muhammad-akash-waris-cyber', label: 'LinkedIn' },
+  { icon: FiMail, href: 'mailto:akashwaris.cybersec@gmail.com', label: 'Email' },
+];
+
 
   return (
     <section

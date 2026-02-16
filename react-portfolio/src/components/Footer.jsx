@@ -58,21 +58,23 @@ const Footer = ({ darkMode }) => {
             ))}
           </div>
 
-          <p className={`text-lg mb-2 flex items-center justify-center gap-2 ${
-            darkMode ? 'text-gray-400' : 'text-gray-600'
-          }`}>
+          <p
+            className={`text-lg mb-2 flex items-center justify-center gap-2 ${
+              darkMode ? 'text-gray-400' : 'text-gray-600'
+            }`}
+          >
             Made with <FiHeart className="text-red-500 animate-pulse" /> by{' '}
-            <span className="text-gradient font-semibold">Muhammad Akash Waris</span>
+            <span className="text-gradient font-semibold">
+              Muhammad Akash Waris
+            </span>
           </p>
-          <p className={`text-sm mb-2 ${
-            darkMode ? 'text-gray-500' : 'text-gray-500'
-          }`}>
+
+          <p className="text-sm mb-2 text-gray-500">
             Cybersecurity Enthusiast & Developer
           </p>
-          <p className={`text-sm ${
-            darkMode ? 'text-gray-500' : 'text-gray-500'
-          }`}>
-            &copy; {currentYear} All Rights Reserved
+
+          <p className="text-sm text-gray-500">
+            &copy; {currentYear} Muhammad Akash Waris. All Rights Reserved
           </p>
         </motion.div>
       </div>

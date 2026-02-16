@@ -1,11 +1,14 @@
 @import "tailwindcss";
 
-* {
-  scroll-behavior: smooth;
-}
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+  }
 
-html {
-  scroll-padding-top: 80px;
+  * {
+    scroll-margin-top: 80px;
+  }
 }
 
 @layer utilities {
@@ -15,23 +18,24 @@ html {
     color: transparent;
     background-image: linear-gradient(to right, #FFD700, #ff9900, #FFD700);
   }
-  
+
   .glass-effect {
     backdrop-filter: blur(16px);
     background-color: rgba(255, 255, 255, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.2);
   }
-  
+
   .glow-effect {
     text-shadow: 0 0 10px rgba(255, 215, 0, 0.5),
                  0 0 20px rgba(255, 215, 0, 0.3),
                  0 0 30px rgba(255, 215, 0, 0.2);
   }
-  
+
   .gradient-border {
     position: relative;
+    border-radius: 1rem;
   }
-  
+
   .gradient-border::before {
     content: '';
     position: absolute;
@@ -43,11 +47,11 @@ html {
     -webkit-mask-composite: xor;
     mask-composite: exclude;
   }
-  
+
   .shimmer {
     animation: shimmer 2s infinite;
   }
-  
+
   @keyframes shimmer {
     0% {
       background-position: -1000px 0;

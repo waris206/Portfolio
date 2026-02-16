@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
+import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Certificates from './components/Certificates';
 import Contact from './components/Contact';
@@ -30,6 +31,7 @@ function App() {
         <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
         <Hero darkMode={darkMode} />
         <About darkMode={darkMode} />
+        <Skills darkMode={darkMode} />
         <Projects darkMode={darkMode} />
         <Certificates darkMode={darkMode} />
         <Contact darkMode={darkMode} />
