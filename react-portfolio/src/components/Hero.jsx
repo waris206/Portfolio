@@ -41,7 +41,7 @@ const Hero = ({ darkMode }) => {
 
   const socialLinks = [
     { icon: FiGithub, href: 'https://github.com/waris206', label: 'GitHub' },
-    { icon: FiLinkedin, href: '#', label: 'LinkedIn' },
+    { icon: FiLinkedin, href: 'https://www.linkedin.com/in/muhammad-akash-waris-cyber', label: 'LinkedIn' },
     { icon: FiMail, href: '#contact', label: 'Email' },
   ];
 
