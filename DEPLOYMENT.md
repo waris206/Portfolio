@@ -10,10 +10,12 @@ Your modern React portfolio is ready to deploy! The built files are already in t
 
 1. Go to your repository settings
 2. Navigate to "Pages" section
-3. Under "Source", select the branch: `copilot/upgrade-portfolio-site-ui`
+3. Under "Source", select the branch with the latest changes (e.g., `main` or `copilot/fix-white-page-issue`)
 4. Select folder: `/ (root)`
 5. Click "Save"
 6. Your site will be live at: `https://waris206.github.io/Portfolio/`
+
+**Note**: The Vite build is configured with `base: '/Portfolio/'` to ensure assets load correctly on GitHub Pages.
 
 ### Option 2: Netlify
 
