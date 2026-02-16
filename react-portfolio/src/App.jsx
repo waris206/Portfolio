@@ -6,6 +6,7 @@ import Projects from './components/Projects';
 import Certificates from './components/Certificates';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   const [darkMode, setDarkMode] = useState(true);
@@ -33,6 +34,7 @@ function App() {
         <Certificates darkMode={darkMode} />
         <Contact darkMode={darkMode} />
         <Footer darkMode={darkMode} />
+        <ScrollToTop darkMode={darkMode} />
       </div>
     </div>
   );

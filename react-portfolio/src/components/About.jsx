@@ -1,32 +1,48 @@
 import { motion } from 'framer-motion';
 import { FiCode, FiShield, FiCpu, FiLock } from 'react-icons/fi';
+import { useState } from 'react';
 
 const About = ({ darkMode }) => {
+  const [hoveredSkill, setHoveredSkill] = useState(null);
+
   const skills = [
     {
       icon: FiShield,
       title: 'Cybersecurity',
       description: 'Advanced techniques in payload creation, steganography, and security analysis',
       color: 'from-red-500 to-pink-500',
+      level: 90,
     },
     {
       icon: FiCpu,
       title: 'Low-Level Programming',
       description: 'Assembly language expertise for efficient systems and innovative solutions',
       color: 'from-blue-500 to-cyan-500',
+      level: 85,
     },
     {
       icon: FiCode,
       title: 'Data Structures & Algorithms',
       description: 'Custom implementations of heaps, expression trees, and graph algorithms',
       color: 'from-green-500 to-emerald-500',
+      level: 88,
     },
     {
       icon: FiLock,
       title: 'Cryptography',
       description: 'Encryption techniques, secure communications, and cryptographic protocols',
       color: 'from-purple-500 to-indigo-500',
+      level: 87,
     },
+  ];
+
+  const techStack = [
+    { name: 'Python', level: 92 },
+    { name: 'Assembly', level: 85 },
+    { name: 'C/C++', level: 80 },
+    { name: 'JavaScript', level: 75 },
+    { name: 'React', level: 78 },
+    { name: 'Security Tools', level: 88 },
   ];
 
   const containerVariants = {
@@ -89,6 +105,8 @@ const About = ({ darkMode }) => {
               key={index}
               variants={itemVariants}
               whileHover={{ scale: 1.05, rotateY: 5 }}
+              onHoverStart={() => setHoveredSkill(index)}
+              onHoverEnd={() => setHoveredSkill(null)}
               className={`p-8 rounded-2xl ${
                 darkMode ? 'bg-gray-800/50' : 'bg-gray-50'
               } backdrop-blur-sm border ${
@@ -105,15 +123,85 @@ const About = ({ darkMode }) => {
                   }`}>
                     {skill.title}
                   </h3>
-                  <p className={`${
+                  <p className={`mb-4 ${
                     darkMode ? 'text-gray-400' : 'text-gray-600'
                   }`}>
                     {skill.description}
                   </p>
+                  
+                  {/* Progress Bar */}
+                  <div className="relative h-2 bg-gray-700 dark:bg-gray-600 rounded-full overflow-hidden">
+                    <motion.div
+                      initial={{ width: 0 }}
+                      whileInView={{ width: `${skill.level}%` }}
+                      viewport={{ once: true }}
+                      transition={{ duration: 1.5, delay: index * 0.2, ease: 'easeOut' }}
+                      className={`h-full bg-gradient-to-r ${skill.color} rounded-full`}
+                    />
+                  </div>
+                  <div className="flex justify-between items-center mt-2">
+                    <span className={`text-sm font-semibold ${
+                      darkMode ? 'text-gray-400' : 'text-gray-600'
+                    }`}>
+                      Proficiency
+                    </span>
+                    <motion.span
+                      initial={{ opacity: 0 }}
+                      whileInView={{ opacity: 1 }}
+                      viewport={{ once: true }}
+                      transition={{ delay: index * 0.2 + 1 }}
+                      className={`text-sm font-bold ${
+                        darkMode ? 'text-white' : 'text-gray-900'
+                      }`}
+                    >
+                      {skill.level}%
+                    </motion.span>
+                  </div>
                 </div>
               </div>
             </motion.div>
           ))}
+        </motion.div>
+
+        {/* Tech Stack Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className={`p-8 md:p-12 rounded-2xl ${
+            darkMode ? 'bg-gray-800/50' : 'bg-gray-50'
+          } backdrop-blur-sm border ${
+            darkMode ? 'border-gray-700' : 'border-gray-200'
+          } shadow-xl mb-8`}
+        >
+          <h3 className="text-3xl font-bold mb-6 text-gradient">
+            Tech Stack
+          </h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {techStack.map((tech, index) => (
+              <div key={index}>
+                <div className="flex justify-between mb-2">
+                  <span className={`font-semibold ${
+                    darkMode ? 'text-white' : 'text-gray-900'
+                  }`}>
+                    {tech.name}
+                  </span>
+                  <span className={`font-bold text-primary`}>
+                    {tech.level}%
+                  </span>
+                </div>
+                <div className="relative h-3 bg-gray-700 dark:bg-gray-600 rounded-full overflow-hidden">
+                  <motion.div
+                    initial={{ width: 0 }}
+                    whileInView={{ width: `${tech.level}%` }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 1.2, delay: index * 0.15, ease: 'easeOut' }}
+                    className="h-full bg-gradient-to-r from-primary to-secondary rounded-full"
+                  />
+                </div>
+              </div>
+            ))}
+          </div>
         </motion.div>
 
         <motion.div
