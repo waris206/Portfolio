@@ -69,6 +69,33 @@ const Projects = ({ darkMode }) => {
       gradient: 'from-blue-500 to-cyan-500',
       icon: '🛫',
     },
+    {
+      title: 'Payload Creation Framework',
+      description: 'Advanced cybersecurity tool for creating and testing security payloads.',
+      longDescription: 'Comprehensive framework for ethical hacking and penetration testing with customizable payload generation and security analysis features.',
+      tech: ['Python', 'Security', 'Pentesting'],
+      github: 'https://github.com/waris206',
+      gradient: 'from-red-500 to-rose-500',
+      icon: '🔐',
+    },
+    {
+      title: 'Steganography Toolkit',
+      description: 'Hide and extract data within images using advanced steganographic techniques.',
+      longDescription: 'Advanced steganography tool with LSB encoding, encryption support, and multiple file format compatibility for secure data hiding.',
+      tech: ['Python', 'Cryptography', 'PIL'],
+      github: 'https://github.com/waris206',
+      gradient: 'from-purple-500 to-violet-500',
+      icon: '🖼️',
+    },
+    {
+      title: 'Custom Heap Implementation',
+      description: 'Efficient data structure implementation with advanced heap operations.',
+      longDescription: 'Custom min/max heap with priority queue functionality, optimized for performance with comprehensive test coverage.',
+      tech: ['C++', 'Data Structures', 'Algorithms'],
+      github: 'https://github.com/waris206',
+      gradient: 'from-green-500 to-teal-500',
+      icon: '🌲',
+    },
   ];
 
   const containerVariants = {
