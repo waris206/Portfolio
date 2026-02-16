@@ -20,14 +20,14 @@ const Contact = ({ darkMode }) => {
     {
       icon: FiLinkedin,
       label: 'LinkedIn',
-      href: '#',
+      href: 'https://www.linkedin.com/in/muhammad-akash-waris-cyber',
       color: 'hover:text-blue-600',
       gradient: 'from-blue-600 to-blue-800',
     },
     {
       icon: FiMail,
       label: 'Email',
-      href: 'mailto:your.email@example.com',
+      href: 'mailto:akashwaris.cybersec@gmail.com',
       color: 'hover:text-red-600',
       gradient: 'from-red-600 to-red-800',
     },
