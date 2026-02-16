@@ -26,7 +26,7 @@ function App() {
 
   return (
     <div className={`${darkMode ? 'dark' : ''}`}>
-      <div className={`min-h-screen ${darkMode ? 'bg-gray-900 text-white' : 'bg-white text-gray-900'} transition-colors duration-500`} style={{ scrollBehavior: 'smooth' }}>
+      <div className={`min-h-screen ${darkMode ? 'bg-gray-900 text-white' : 'bg-white text-gray-900'} transition-colors duration-500`}>
         <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
         <Hero darkMode={darkMode} />
         <About darkMode={darkMode} />
